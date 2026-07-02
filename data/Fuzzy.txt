@@ -1,0 +1,297 @@
+Lógica Paraconsistente
+Maurício Correia Lemes Neto, Nério Venson
+Mestrado em Ciência da Computação - 2002 Departamento de Informática e Estatística - INE
+Universidade Federal de Santa Catarina (UFSC), Brasil, 88040-900 Fone (48) 331 9739, Fax (48) 331 9770
+mauricio@cp.cefetpr.br, nerio@inf.ufsc.br
+
+
+Resumo: A Lógica Paraconsistente é classificada entre as chamadas lógicas não clássicas heterodoxas por derrogar alguns dos princípios basilares da lógica clássica. Um dos mais importantes nomes da Lógica Paraconsistente é o brasileiro Newton C. A. da Costa, considerado seu criador. As teorias do lógico brasileiro são de grande importância para diversas áreas, além da matemática, filosofia e computação. A Lógica Paraconsistente apresenta alternativas a proposições cuja conclusão enseja valores além de Verdadeiro e Falso, como Indeterminado e Inconsistente. Duas classes de lógicas paraconsistentes são abordadas neste trabalho: A Lógica Paraconsistente Anotada e a Lógica para Inconsistência.
+Palavras-chave: Lógica, Paraconsistente, Lógicas não Clássicas.
+
+Abstract : The Paraconsistent Logic is a non-classic and heterodox logic for contradicting some of the fundamental principles of classic logic. The creator of the Paraconsistent Logic is a brazilian logical called Newton C. A. da Costa. The theories of the brazilian logical are very important for several areas of knowledge beyond mathematics, philosophy and computation. Paraconsistente Logic presents alternatives for proposals whose conclusion tries values beyond True and False, as Undetermined and Contradictory. Two classes of paraconsistentes logics we approach in this work: Lógica Paraconsistente Anotada e Logica para Inconsistência.
+Key-words: Paraconsistent, Logic, non-classic Logic.
+
+ 
+Introdução
+O estudo da lógica está fundamentado na chamada Lógica Clássica, cujo núcleo é o cálculo de predicados clássico de primeira ordem, podendo ser estendida pela teoria dos conjuntos, teoria dos tipos e teoria das categorias.
+Diversas lógicas foram desenvolvidas (Figura 1), visando complementar a Lógica Clássica tradicional e, até mesmo, derrogar alguns de seus princípios fundamentais.
+Entre essas lógicas encontra-se a Lógica Paraconsistente, que visa, entre outras coisas, oferecer alternativas aos princípios clássicos do Terceiro Excluído e da Não Contradição, insuficientes para tratar proposições cuja conclusão sejam valores diferentes de Verdadeiro e Falso.
+Algumas áreas de conhecimento, como filosofia, inteligência artificial, robótica e sistemas especialistas estudam Lógica Paraconsistente, pois em suas aplicações são constantes as incertezas e as inconsistências.
+ 
+Histórico
+Podemos classificar o estudo da lógica em três períodos.
+1.	Período Aristotélico;
+2.	Período Booleano;
+3.	Período Contemporâneo.
+
+Período Aristotélico. Compreendido entre o (384 – 322 a.C) até princípio do século XIX. Caracterizou-se pela sistematização da lógica por Aristóteles.
+Período Booleano. Caracterizou-se pelo emprego de idéias algébricas no domínio da lógica.
+G. Boole (1815-1864) e A. de Morgan são nomes de destaque no período.
+Período Contemporâneo. Este pode ser dividido em dois subperíodos: 1900 a 1930 e de 1930 ao fim do século XX. No primeiro subperíodo destaca-se a obra (em três volumes publicados em 1910, 1912 e 1913) de A. N.
+Whitehead (1861-1947) e B. Russell (1872-1970)
+ 
+intitulada Princípia Mathematica, abordando trabalhos lógicos de G. Peano (1858-1932) e Frege, e teoria dos conjuntos de G. Cantor (1845-1918). Outras contribuições foram dadas por
+N. Wiener (1894-1964), R. Carnap (1891-1970),
+J.	Herbrand	(1908-1931)	e	a	escola	de
+D. Hilbert (1862-1943), com seus matemáticos:
+E.	Zermelo	 (1871-1953),	J.	 von	Neumann (1903-1957),	W.	Ackermann	(1896-1962)	e
+P. Bernays (1888-1977).
+No segundo subperíodo a evolução foi espetacular com diversos fatos marcantes: Kurt Gödel (1906-1978) publica os Teoremas de Incompleteza; Alan M. Turing (1912-1954) formula a Teoria Geral dos Processos Computáveis; a Teoria da Recursão toma forma com A. Church (1903-1995), C. Kleene (1909-1994), J. B. Rosser (1907-1989) e outros;
+cria-se a Teoria dos Modelos (Gödel e Cohen).
+A Lógica Paraconsistente tem sua origem marcada pelos trabalhos elaborados e publicados
+ 
+ou seja, se uma proposição é verdadeira, então ela é verdadeira. Citando Russell: “once true, always true; once false, always false”.
+As lógicas não clássicas podem ser classificadas em Complementares da Clássica e Heterodoxas (Figura 1). Enquanto as Lógicas Complementares servem ao propósito de ampliar a Lógica Clássica, as Lógicas Heterodoxas delimitam ou derrogam alguns dos seus princípios básicos. A Lógica Paraconsistente, da classe das lógicas Heterodoxas, objeto deste trabalho, tem como foco a Lei da Contradição..
+ 
+em 1948, de modo independente, pelo polonês Stanislaw Jaskowski e o brasileiro Newton C. A . da Costa, atualmente professor da Faculdade de Filosofia da USP. Estes trabalhos pioneiros consideravam a possibilidade da contradição e só foram  denominados  de  “Paraconsistente”  que
+significa “ao lado de“, “próximo de”, em 1976,
+ 
+Teoria de Conjuntos
+Teoria de tipos ( Lógica de Ordem Superior)
+Teoria de Categorias como Fundamento da Mantemática
+ 
+Lógica Epistêmica
+Clássica
+
+Lógica da Crença
+Lógica do Conhecimento etc.
+Lógica Modal Clássica Lógica Clássica da Ação etc.
+Lógicas Intencionais Clássicas Lógica Indutiva Clássica etc.
+ 
+Lógica Paracompletas
+Lógicas Paraconsistentes
+Lógicas não Aléticas Lógicas Quânticas Lógicas Relevantes
+Lógicas Modais Paraconsistentes Lógicas Epistêmicas Paracompletas Lógicas indutivas Paraconsistentes
+ 
+pelo filósofo Francisco Miro Quesada.. O Prof. Newton C. A. Da Costa desenvolveu e vem desenvolvendo vários sistemas paraconsistentes contendo todos os níveis lógicos usuais, e é considerado pela comunidade científica mundial como um dos criadores da Lógica Paraconsistente.
+
+
+Lógicas Clássicas e não Clássicas
+Alguns dos princípios mais conhecidos da Lógica Clássica (ou tradicional) são:
+1.	Princípio da Identidade:
+x = x
+ou seja, todo objeto é idêntico a si mesmo;
+2.	Princípio do Terceiro Excluído:
+p  p
+ou seja, de duas proposições contraditórias (tais que uma é a negação da outra), uma é verdadeira;
+3.	Princípio da Não-Contradição:
+(p  p)
+ou seja, entre duas proposições contraditórias, uma é falsa.
+4.	Princípio da Identidade Proposicional:
+p  p
+ 
+Figura 1 - Classificação de algumas lógicas
+
+
+Lógica Paraconsistente
+Supondo que a linguagem L, subjacente a uma teoria dedutiva F, contém um símbolo para a negação. Então, F é dita ser inconsistente se e somente se possuir dois teoremas, dos quais um é a negação do outro; caso contrário, F é dita consistente. A teoria F é dita trivial se e somente se todas as fórmulas (ou todas as sentenças) da linguagem de F são teoremas de F; caso contrário F diz-se que F é não-trivial. Ou seja, lógicas não triviais são aqueles que não satisfazem a seguinte teoria: ”Uma teoria chama-se trivial ou super- completa quando todas as proposições expressáveis em sua linguagem forem também teoremas“ [8].
+Na lógica clássica e em outras lógicas, toda teoria que for inconsistente (também se diz contraditória) é trivial ou vice-versa. Ou seja, não há separação entre teorias inconsistentes e teorias triviais. De maneira geral, um sistema de lógica é chamado de paraconsistente se puder ser empregado como subjacente a teorias inconsistentes, porém não triviais.
+ 
+As lógicas paraconsistentes tratam da lei da contradição. Seja uma proposição que contenha a premissa: “Esta maça é vermelha”. Sob a perspectiva de lógicas clássicas só poderemos afirmar que ela é vermelha (Verdadeiro) ou não é vermelha (Falso). Entretanto, sabemos que a maçã pode possui diversas tonalidades, variando do verde ao vermelho.
+A representação de tal proposição em computação binária se torna impossível, já que o modelo binário tem grandes dificuldades de tratar inconsistências, ambigüidades, paradoxos e incertezas que ocorrem com freqüência no mundo real.
+Uma das áreas onde a lógica clássica se mostrou ineficiente foi a da inteligência artificial proposta em sistemas especialistas, onde incertezas, ambigüidades e contradições são constantes.
+Nosso cérebro trabalha muito bem com as contradições, pois estamos constantemente sujeitos a esse tipo de informação. Por exemplo, se quisermos saber sobre determinado assunto, como economia brasileira, podemos conhecer a opinião de diversos economistas. Essas opiniões certamente serão contraditórias, o que não nos impede de chegar a uma conclusão, podendo ser, inclusive, totalmente nova, diferente de todas as outras.
+As lógicas paraconsistentes, como já mencionado, infringem a lei da contradição e tem encontrado aplicação nas mais variadas áreas.
+
+
+Áreas	de	Aplicação	da	Lógica Paraconsistente
+Entre as áreas onde a Lógica Paraconsistente encontra aplicação, podemos destacar as seguintes:
+1)	Em matemática, na axiomatização de teoria de conjuntos sem as restrições fortes postas para evitar paradoxos, como os paradoxos de Russell e de H. B. Curry, e no estudo de determinadas estruturas abstratas que dão origem a contradições;
+2)	Em lógica epistêmica, em particular, em lógica de crença (com certeza mantemos crenças contraditórias em nossa vida);
+3)	Em física, especialmente para se tratar de teorias incompatíveis entre si, como a mecânica quântica e a relatividade geral;
+4)	Em computação, inteligência artificial e robótica;
+5)	Em psicanálise, disciplina que, segundo alguns autores, exige lógica paraconsistente;
+ 
+6)	Em questões de índole filosófica, como se dá com a dialética, a qual, em algumas formulações, requer idéias paraconsistentes [3].
+
+
+Classes de Lógicas Paraconsistentes
+Várias são as classes de lógicas paraconsistentes. Neste trabalho tratamos apenas de duas classes da lógica paraconsistente: a Lógica Paraconsistente Anotada - LPA, descrita por Newton Carneiro Affonso da Costa e outros [3] e a Lógica para Inconsistência - LI, de Arthur R. V. Buchsbaum, professor da UFSC [2].
+A Lógica Paraconsistente Anotada
+Na Lógica Paraconsistente Anotada os sinais e as formações são descritos na forma de graus de crença relativos a uma dada proposição. Estes graus de crença variam entre valores reais de 0 a 1 e podem ser obtidos por medições, por estatísticas ou probabilidades.
+Para uma melhor representação, a Lógica Paraconsistente Anotada pode ser associada a um reticulado, em cujos vértices são alocados os símbolos que indicam os estados lógicos.
+O estado lógico é encontrado através de dois valores de anotação < 1 e < 2, onde < 1 representa o grau de crença e < 2 representa o grau de descrença atribuído à proposição.
+Os estados lógicos, com os valores dos graus de crença e de descrença, podem ser relacionados da seguinte forma:
+T  = (1, 1) Inconsistente
+V  = (1, 0) Verdadeiro
+F  = (0, 1) Falso
+  = (0, 0) Indeterminado
+Os graus de crença e descrença em um procedimento prático são considerados como informações de entrada do sistema e os estados lógicos representados nos vértices do reticulado são as saídas resultantes da análise paraconsistente (Figura 2).
+
+Figura 2 - Demonstração de um sistema básico de análise paraconsistente
+ 
+.Da	Costa	em [3]	estabelece	algumas convenções e terminologias.
+Seja < = <|< |,•> um reticulado finito fixo, onde:
+1.	| < | = [0,1] x [0,1]
+2.	< {((µ1,p1),( µ2,p2))  ([0,1] x [0,1])² |
+µ1 < e p1 < p2} ( onde < indica a ordem usual dos números reais). Tal reticulado denomina-se reticulado de valores- verdade.
+A idéia epistemológica intuitiva da associação de uma anotação (µ1, µ2) a uma proposição p significa que o grau de crença em p é µ1, enquanto o grau de descrença é µ2. Por exemplo, intuitivamente, em tal reticulado podemos obter:
+1.	(1.0, 0.0) indica “crença total”
+2.	(0.0, 1.0) indica “descrença total”.
+3.	(1.0, 1.0) indica “crenças totalmente inconsistentes”.
+4.	(0.0, 0.0) indica “ausência total de crença”.
+Da Costa [3] apresenta o seguinte exemplo:
+Seja a proposição p  “Pedrinho é suspeito de não te ido à escola”. Temos.
+ 
+a)	Se anotarmos com p(1.0 0.0), a leitura intuitiva será “Pedrinho é suspeito de não ter ido à escola com crença total (= crê-se totalmente que Pedrinho não foi à escola)”.
+b)	Se anotarmos com p(0.0, 1.0), a leitura intuitiva será “Pedrinho é suspeito de não ter ido à escola com descrença total (= crê-se totalmente que Pedrinho foi à escola)”.
+c)	Se anotarmos com p(1.0, 1.0), a leitura intuitiva será “Pedrinho é suspeito de não ter ido à escola com crença totalmente inconsistente”. Isso pode suceder-se se houver registro de presença na escola e ao mesmo tempo uma pessoa amiga o tiver visto jogando bola nos arredores da residência.
+d)	Se anotarmos com p(0.0, 0.0), a leitura intuitiva será “Pedrinho é suspeito de não ter ido à escola com ausência total de crença”. Isso pode suceder-se se não houver registro de presença na escola e ninguém souber dizer sobre o paradeiro de Pedrinho.
+A análise paraconsistente dos graus de crença e descrença pode ser feita através da representação do reticulado em um Quadrado Unitário no Plano Cartesiano – QUPC, onde os graus de crença ficam no eixo x e os de descrença no eixo y (Figura 3).
+ 
+
+ 
+
+
+
+
+- 1
+Totalmente Falso
+
+VICC = -1/2
+ 
+µ2 - Grau de descrença
+
+B = (0,1)
+
+
+
+
+
+QF T	T  F
+ 
+
+
+
+
+C = (1,1)
+ 
+
+
+GRAU DE CONTRADIÇÃO
+
++ 1
+Totalmente Inconsistente
+
+VSCCT = 1/2
+ 
+
+ 
+
+
+
+
+VICCT = -1/2
+
+Totalmente Indeterminado
+- 1
+ 
+QF
+ F
+ 
+
+
+
+
+
+
+
+ V	QV 
+ 
+T  V QV T
+ 
+
+
+
+
+
+VSCC = 1/2
+
+Totalmente Verdadeiro
++ 1
+ 
+A = (0,0)	D = (1,0)
+ 
+µ1 - Grau de crença
+GRAU DE CERTEZA
+ 
+
+T = Inconsistente  = Indeterm inado	F = Falso  V = Verdadeiro  QV = Quase Verdadeiro	QF = Quase Falso
+Vscc = Valor superior de controle de certeza  Vscct = Valor superior de controle de contradição
+Vicc = Valor inferior de controle de certeza  V ic ct = Valor inferior de controle de contradição
+
+Figura 3 - Representação no QUPC dos graus de certeza e contradição com os valores de controle limite ajustados em Vscc=Vscct= 1/2 e Vicc e Vicc = Vicct -1/2
+ 
+Grau de Contradição - Gct.
+O Gct pode ser calculado no QUPC pela equação: Gct = µ1 + µ2 - 1. O grau de contradição varia de –1 a +1 e seu valor é correspondente à distância do ponto de interpolação entre os graus de crença e de descrença á reta que liga o ponto D=(1,0) Verdadeiro ao ponto B=(0,1) Falso. O valor –1 aparece no ponto A=(0,0), onde temos uma contradição máxima negativa. O valor +1 aparece no ponto C=(1,1), onde temos uma contradição máxima positiva.
+
+Grau de Certeza = Gc
+O Gc pode ser calculado no QUPC pela equação: Gc = µ1 + µ2 . O grau de certeza também varia de –1 a +1 e seu valor corresponde à distância do ponto de interpolação entre os graus de crença e descrença à reta que liga o ponto A=(0,0) Desconhecido ao ponto C=(1,1) Inconsistente. O valor –1 acontece no ponto B=(0,1), onde temos uma certeza máxima da negação da proposição. O valor +1 acontece no ponto D=(1,0), onde temos a certeza máxima da afirmação da proposição.
+Na prática um sistema paraconsistente funciona da seguinte forma:
+1)	Se existir um alto grau de contradição, não existe certeza ainda quanto à decisão, portanto deve-se buscar novas evidências.
+2)	Se existir um baixo grau de contradição, pode-se formular a conclusão desde que se tenha um alto grau de certeza
+Este alto grau de contradição e de certeza pode ser positivo ou negativo. Assim, esses valores devem ser considerados em módulo. A decisão do que é baixo e o que é alto depende do projeto onde o sistema vai ser utilizado. Para determinar as ações que o sistema vai tomar após a análise paraconsistente pode-se criar regiões internas que correspondam aos estados lógicos de saída. Na Figura 1 podemos doze regiões com seus respectivos estados lógicos (por exemplo: T, V, F,
+, QFV, F). O formato das regiões podem variar através do ajuste dos controles de limites.
+Na discretização do reticulado apenas um estado lógico estará ativo no final de cada análise. Assim o Sistema Paraconsistente pode formular uma conclusão e realizar uma ação baseada em uma palavra binária de 12 dígitos, tornando apto a trabalhar com sistemas de controles discretos. Esse processo de discretização é realizado por um algoritmo para-analisador[3], que traduz a análise paraconsistente através da análise dos valores dos
+ 
+graus de crença e descrença, resultando em valores dos graus de contradição e de certeza.
+O algoritmo para-analisador pode ser utilizado em software (ex.: sistemas especialistas) ou em hardware cujo circuitos façam tratamento de sinais elétricos de acordo com equação apresentadas (ex.:controladores de processo industrial).
+
+Lógica para Inconsistência - LI
+O Prof. Arthur Buschsbaum apresenta em [2], alguns fundamentos para lógicas paraconsistentes que deram origem, posteriormente ao que o autor chama de LI. A LI é classificada em LI1 e LI2, sendo a LI1 bem próxima da lógica clássica proposicional e a LI2 uma extensão conservativa da LI1. Na prova dos teoremas é respeitada a lógica clássica proposicional, com exceções de algumas regras, (como a da Implicação Material). O alfabeto de LI2 engloba o alfabeto de LI1 incluindo o símbolo de negação clássica (~). A LI2 surgiu para completar a LI1, em situações que a mesma não consegue expressar ou provar teoremas.
+Em lógica clássica, de uma proposição seguida de sua negação, pode-se concluir uma nova fórmula ( P, P < Q), ou seja, através de uma contradição pode deduzir qualquer coisa. Essa contradição clássica não é aceita pela lógica paraconsistente. Algumas expressões não válidas em LI1 e LI2:
+PQ < Q  P P< Q < P< Q
+P, PQ < Q
+Da Costa [6] apresenta princípios semelhantes aos da LI1 e LI2 que são os cálculos Cn, tomados como ponto de partida para o estudo de LI1 e LI2. Os cálculos CI1 e CI2 , por exemplo, possuem como teoremas a lei da dupla negação (a qual só vale parcialmente em LI1 ), as leis de De Morgan (as quais não valem em CI1), além de decompor a negação da implicação em uma conjunção (a qual também não vale em LI1 ).
+A Figura 4 apresenta tabelas de valores veritativos para LI. Os valores veritativos da LI são:
+V=Absolutamente Verdadeiro (0);
+R=Relativamente Verdadeiro (1);
+F=Absolutamente Falso (2). Valoração= {V, R, F}, onde V > R > F.
+ 
+de construir raciocínios a partir de informações provindas de observações divergentes, sem que tenhamos qualquer informação sobre os observadores que as fizeram.
+Este exemplo mostra como a lógica paraconsistente é importante como ferramenta em áreas como a Inteligência Artificial, onde através de premissas podemos não só inferir novas conclusões mas introduzir novas premissas para obtermos uma gama de conhecimentos através dessas novas conclusões.
+
+ 
+Figura 4 - Tabelas Verdade para LI1
+
+Uma LI1 valoração v é uma função L{V,R,F} tal que:
+ 
+Agradecimentos
+Ao Professor Jorge Muniz Barreto, pelo
+ 
+v(PQ) = 
+ 
+V, se v(P) = F
+V(Q), se v(P)= V ou v(P)=R
+ 
+incentivo à pesquisa do tema, através do estímulo a
+descobertas além dos tópicos previstos na ementa da disciplina ministrada.
+ 
+v(PQ = min{v(P), v(Q)}
+v(PQ = max{v(P), v(Q)}
+V, se v(P) = F
+ 
+Ao Professor Arthur Ronald de Vallauris Buchsbaum, pelo fornecimento do material e disponibilidade em orientar e esclarecer dúvidas.
+ 
+v(P) =	R, se v(P)= R
+F, se v(P)=V
+ 
+Uma LI2 valoração é uma função que possui todas as propriedades de LI1, e:
+v(~P) =	V, se v(P) = F ou (P) = R F, se v(P)=V
+
+
+
+Conclusão
+A lógica paraconsistente, conforme foi apresentado neste artigo, pode ser utilizada e diversos campos do conhecimento onde é necessário se fazer o tratamento do conhecimento incerto. Fica assim, caracterizada a importância da lógica não apenas para a matemática e filosofia, como tem sido ao longo dos séculos.
+Buschsbaum cita em [2] um exemplo que resume de forma clara o foco da lógica paraconsistente. Suponha um objeto percebido como vermelho por um observador, mas como verde por outra que se mova com velocidade diferente com respeito ao objeto, sem que tenhamos qualquer informação a respeito dessas velocidades. Para um quadro mais nítido da situação, suponha que nem mesmo sabemos que a observação da cor poderia ser afetada pela velocidade relativa ao objeto. As lógicas paraconsistentes projetadas pelo autor destina-se exatamente a tratar situações como essa: capazes
+ 
+Referências Bibliográficas
+[1]	Barreto, Jorge M., Inteligência Artificial no Limiar do Século XXI. Florianópolis: PPP Edições, 2002.
+[2]	Buchsbaum, Arthur R.V., Pequeno, Tarcísio H. C., Uma família de Lógicas paraconsistentes e/ou paracompletas com semânticas recursivas. São Paulo: Coleção Documentos , USP, 1993.
+[3]	Da Costa, Newton C. A. et al., Lógica Paraconsistente Aplicada. São Paulo: Editora Atlas, 1999.
+[4]	Da Costa, Newton C. A., Ensaio sobre os fundamentos da Lógica. São Paulo: Editora Hucitec, 1994.
+[5]	Da Costa, Newton C. A., Sistemas formais inconsistentes Curitiba: Clássicos-UFPR, 1993.
+[6]	Da Costa, Newton C. A., On the Theory of Inconsistent Format Systems. Notre Dame Journal of Formal logic 15, pp. 497-510, 1974.
+[7]	Pequeno, Tarcísio, A Logic for inconsistent Nonmonotonic Reasoning. Technical Report 90/6, Departament of Computing, Imperial College, London, 1990
+[8]	Puga, L. Zardo,A Lógica Paraconsistente. Revista Brasileira de Filosofia, Instituto Brasileiro de Filosofia, São Paulo, 1989
+[9]	Revista Saber Eletrônica, Brasil, nº 317, 1999.

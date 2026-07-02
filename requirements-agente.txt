@@ -1,0 +1,17 @@
+# Dependências para agente_busca_web.py
+# Instalação: pip install -r requirements-agente.txt
+
+python-dotenv>=1.0.0
+langchain-core>=0.2.0
+langchain-groq>=0.1.0
+langchain-community>=0.2.0
+langchain-chroma>=0.1.0
+duckduckgo-search>=6.0.0
+sentence-transformers>=2.2.0
+chromadb>=1.5.0
+
+# Opcional: LangGraph para create_react_agent (recomendado)
+# langgraph>=0.0.20
+
+# Se usar apenas LangChain clássico (sem LangGraph):
+# langchain>=0.2.0

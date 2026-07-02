@@ -1,0 +1,68 @@
+# Configuração do Modelo Híbrido de LLM
+# Carregada por config_loader.load_config()
+
+# Banco de conhecimento: arquivo JSON com termo -> grau [0,1]. Se vazio, usa SEED interno.
+knowledge_base:
+  path: "data/train_all.json"   # ex: data/train_all.json
+  chroma_path: ""  # ex: meu_vector_db — se preenchido, enriquece KB com RAG
+
+# Modelo neural L3 (avaliação de verdade)
+l3:
+  model_path: "truth_scoring_model.pt"
+  backbone: "bert-base-multilingual-cased"
+
+# Base teórica L4 (Russell)
+l4:
+  russell_concepts_path: "l4_russell_concepts.json"
+
+# Camada L1: extração semântica auxiliar
+l1:
+  spacy_enabled: true
+  spacy_languages:
+    - "pt"
+    - "en"
+
+# Geração de resposta (L5): provider pode ser ollama, template, custom_lm,
+# openai, anthropic, gemini, grok, groq ou meta.
+generation:
+  provider: "ollama"  # providers cloud usam as variáveis de ambiente correspondentes
+  model: "doninha10"          # modelo específico do provider (opcional)
+  base_url: ""       # base URL customizada (opcional)
+  api_key: ""        # chave opcional; prefira usar variáveis de ambiente
+  ollama_model: "doninha10"  # modelo local criado com Modelfile
+  ollama_host: "http://localhost:11434"  # URL do servidor Ollama
+
+# Refinamento da resposta final (L6): segundo prompt de escrita fluida
+finalization:
+  provider: "ollama"
+  model: ""
+  base_url: ""
+  api_key: ""
+  ollama_model: "doninha10"
+  ollama_host: "http://localhost:11434"
+
+# Texto final definitivo (L7)
+l7:
+  provider: "ollama"
+  model: ""
+  base_url: ""
+  api_key: ""
+  ollama_host: "http://localhost:11434"
+  custom_lm_path: ""
+
+# Agente de pesquisa (unificado ao pipeline)
+agent:
+  use_agent: true    # o agente é usado automaticamente para enriquecer contexto
+  vector_db_path: "meu_vector_db"
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+# API
+api:
+  host: "0.0.0.0"
+  port: 8000
+
+# Chat: número máximo de turnos no contexto
+chat:
+  max_turns_in_context: 10
+
+HSA_OVERRIDE_GFX_VERSION: 9.0.0

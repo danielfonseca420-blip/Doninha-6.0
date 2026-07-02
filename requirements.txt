@@ -1,0 +1,21 @@
+torch
+transformers
+accelerate
+datasets
+sentencepiece
+python-docx
+protobuf<=3.20.3
+scipy
+numpy
+psutil
+bitsandbytes; platform_system != "Windows"
+duckduckgo-search>=6.0.0
+pyyaml>=6.0
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+ollama>=0.1.0
+langchain>=0.1.0
+langchain-groq>=0.1.0
+spacy>=3.7,<4.0
+https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

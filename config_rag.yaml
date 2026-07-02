@@ -1,0 +1,143 @@
+"""
+CONFIGURAÇÃO DE RAG HÍBRIDO
+============================
+Arquivo de configuração para o sistema RAG Híbrido.
+Salvar como 'config_rag.yaml' e referenciar em config_loader.py
+"""
+
+# RAG Híbrido - Configuração Global
+rag_hybrid:
+  # Motor RAG
+  engine:
+    embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+    chroma_path: "chromadb"
+    verbose: true
+
+  # Estratégia padrão de retrieval
+  default_strategy: "hybrid"  # direct_injection | semantic_retrieval | hybrid | domain_aware
+
+  # Domínios pré-configurados
+  domains:
+    filosofia:
+      description: "Filosofia, epistemologia, lógica clássica"
+      keywords:
+        - conhecimento
+        - verdade
+        - ser
+        - essência
+        - substância
+        - silogismo
+      kb_path: "data/kb_filosofia.json"
+      chroma_collection: "filosofia_corpus"
+      injection_weight: 0.8
+      retrieval_weight: 0.2
+      max_injected_docs: 3
+      max_retrieved_docs: 5
+      system_prompt: |
+        Você é um especialista rigoroso em filosofia com acesso a uma base de 
+        conhecimento especializada em epistemologia, lógica e metafísica. 
+        Responda sempre usando o contexto fornecido quando relevante. 
+        Seja preciso, cite fontes filosóficas e mantenha o rigor conceitual.
+
+    lógica:
+      description: "Lógica formal, lógica paraconsistente, teoria de modelos"
+      keywords:
+        - proposição
+        - predicado
+        - quantificador
+        - inferência
+        - validade
+        - contradição
+      kb_path: "data/kb_logica.json"
+      chroma_collection: "logica_corpus"
+      injection_weight: 0.75
+      retrieval_weight: 0.25
+      max_injected_docs: 3
+      max_retrieved_docs: 5
+      system_prompt: |
+        Você é um especialista em lógica formal e paraconsistência. 
+        Responda sempre usando o contexto fornecido quando relevante. 
+        Mantenha a precisão técnica, use notação apropriada e cite definições 
+        formais quando necessário.
+
+    epistemologia:
+      description: "Epistemologia, teoria do conhecimento, justificação epistêmica"
+      keywords:
+        - justificação
+        - crença
+        - conhecimento
+        - evidência
+        - confiabilismo
+      kb_path: "data/kb_epistemologia.json"
+      chroma_collection: "epistemologia_corpus"
+      injection_weight: 0.8
+      retrieval_weight: 0.2
+      max_injected_docs: 3
+      max_retrieved_docs: 5
+      system_prompt: |
+        Você é um especialista rigoroso em epistemologia com acesso a uma base de 
+        conhecimento especializada. Responda sempre usando o contexto fornecido 
+        quando relevante. Cite teorias epistemológicas estabelecidas e seja preciso 
+        na caracterização de conceitos.
+
+    geral:
+      description: "Conhecimento geral e enciclopédico"
+      kb_path: "data/kb.json"
+      chroma_collection: "general_corpus"
+      injection_weight: 0.7
+      retrieval_weight: 0.3
+      max_injected_docs: 3
+      max_retrieved_docs: 5
+      system_prompt: |
+        Você é um especialista rigoroso com acesso a uma base de conhecimento 
+        especializada. Responda sempre usando o contexto fornecido quando relevante. 
+        Seja preciso e cite fontes quando possível.
+
+  # Configuração de recuperação de documentos
+  retrieval:
+    max_documents_total: 8       # Máximo de documentos totais (injetados + recuperados)
+    min_relevance_score: 0.3     # Score mínimo de relevância
+    context_truncation_length: 500  # Máximo de caracteres por documento
+
+  # Integração com L1-L2
+  l1_l2_integration:
+    enabled: true
+    auto_detect_domain: true
+    enrich_concepts: true
+    enrich_judgments: true
+    refine_epistemic_classification: true
+
+  # Logging e debug
+  logging:
+    verbose: true
+    log_context_retrieval: true
+    log_domain_detection: true
+    log_rag_metrics: true
+
+# Knowledge Base
+knowledge_base:
+  path: "data/train_all.json"
+  chroma_path: "chromadb"
+  enable_rag_on_queries: true
+  default_kb: "data/train_all.json"
+  domain_specific_kbs:
+    filosofia: "data/kb_filosofia.json"
+    lógica: "data/kb_logica.json"
+    epistemologia: "data/kb_epistemologia.json"
+
+# Camadas L1-L2 com RAG
+l1:
+  use_rag_context: true
+  enrich_with_kb: true
+  domain_aware: true
+
+l2:
+  use_rag_context: true
+  refine_with_domain_kb: true
+  apply_epistemic_refinement: true
+
+# System Prompt Padrão (fallback)
+system_prompt_default: |
+  Você é um especialista rigoroso com acesso a uma base de conhecimento especializada.
+  Responda sempre usando o contexto fornecido quando relevante. Seja preciso e cite 
+  fontes quando possível.
